@@ -99,3 +99,4 @@ conv_176,0.9,"[""customer-appreciation"", ""halloween-theme""]",0.95,Chipotle ex
 conv_177,0.8,"[""halloween-theme"", ""brand-engagement""]",0.85,Customer engages positively with Chipotle over a Halloween duo concept.,grok-3,2025-12-24 22:25:38
 conv_178,0.0,"[""neutral-response"", ""customer-support""]",0.9,"Neutral response from AskPlayStation with no emotional tone, just information.",grok-3,2025-12-24 22:25:38
 conv_179,-1.0,"[""frustration"", ""customer-support""]",0.9,Customer expresses frustration and impatience with AskPlayStation for help.,grok-3,2025-12-24 22:25:38
+
