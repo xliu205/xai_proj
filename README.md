@@ -1,4 +1,4 @@
-# xAI Conversation Insights Pipeline
+# Backend Engineer Insights Platform
 
 Production-minded MVP for an internal insights platform. It ingests support conversations, queues them for async Grok analysis under strict rate limits, and stores both raw payloads and validated LLM output for downstream consumers.
 

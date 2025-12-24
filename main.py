@@ -12,7 +12,7 @@ from app.rate_limiter import TokenBucket
 from app.worker import ProcessingWorker
 
 
-app = FastAPI(title="Conversation Insights Pipeline", version="1.0.0")
+app = FastAPI(title="Backend Engineer Insights Platform", version="1.0.0")
 inbound_limiter = TokenBucket(rate_per_sec=settings.inbound_rps)
 processing_queue: asyncio.Queue[str] = asyncio.Queue()
 worker = ProcessingWorker(queue=processing_queue)
