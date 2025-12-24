@@ -1,0 +1,101 @@
+conversation_id,sentiment_score,clusters,confidence,reasoning,model,created_at
+conv_1,0.3,"[""customer_support"", ""assistance_offer""]",0.8,"Positive tone from support offering help, though no resolution yet.",grok-3,2025-12-24 22:24:19
+conv_11,-1.0,"[""customer_support"", ""negative_feedback""]",0.9,"Support acknowledges a negative experience, reflecting poor sentiment.",grok-3,2025-12-24 22:24:19
+conv_12,-1.0,"[""customer_complaint"", ""connectivity_issues""]",0.95,Customer expresses strong frustration and skepticism with sarcasm.,grok-3,2025-12-24 22:24:19
+conv_15,0.2,"[""customer_support"", ""assistance_offer""]",0.7,"Support offers help, but tone is neutral with no resolution.",grok-3,2025-12-24 22:24:19
+conv_2,-1.0,"[""customer_frustration"", ""communication_issue""]",0.85,"Customer questions support's method, indicating doubt or frustration.",grok-3,2025-12-24 22:24:19
+conv_3,-1.0,"[""customer_frustration"", ""unresolved_issue""]",0.9,"Customer highlights lack of response, showing clear dissatisfaction.",grok-3,2025-12-24 22:24:19
+conv_4,0.2,"[""customer_support"", ""assistance_offer""]",0.7,"Support offers help, but tone remains neutral without progress.",grok-3,2025-12-24 22:24:19
+conv_5,-1.0,"[""customer_frustration"", ""communication_issue""]",0.8,Customer confirms action but implies ongoing issue with no response.,grok-3,2025-12-24 22:24:19
+conv_6,0.2,"[""customer_support"", ""assistance_offer""]",0.7,"Support requests details, maintaining a neutral helpful tone.",grok-3,2025-12-24 22:24:19
+conv_8,-1.0,"[""customer_complaint"", ""poor_service""]",0.95,Customer directly criticizes service quality with strong negative tone.,grok-3,2025-12-24 22:24:19
+conv_16,-1.0,"[""customer_complaint"", ""service_issue""]",0.7,"Negative sentiment due to implied frustration with service from day one, though text is incomplete.",grok-3,2025-12-24 22:24:28
+conv_17,0.8,"[""customer_support"", ""issue_resolution""]",0.9,Positive sentiment as support offers help with a friendly tone.,grok-3,2025-12-24 22:24:28
+conv_18,-1.0,"[""customer_complaint"", ""network_issue""]",0.95,Strong negative sentiment with accusations of lying about connection quality.,grok-3,2025-12-24 22:24:28
+conv_19,0.5,"[""customer_support"", ""account_access""]",0.8,Neutral to slightly positive sentiment as support offers assistance with account access.,grok-3,2025-12-24 22:24:28
+conv_20,-1.0,"[""customer_complaint"", ""support_frustration""]",0.9,Negative sentiment due to ongoing unresolved issue and frustration with support.,grok-3,2025-12-24 22:24:28
+conv_21,0.0,"[""customer_support"", ""clarification_request""]",0.7,Neutral sentiment as support asks for clarification without strong tone.,grok-3,2025-12-24 22:24:28
+conv_22,-1.0,"[""customer_complaint"", ""training_issue""]",0.85,Negative sentiment with implied criticism of Spectrum's training updates.,grok-3,2025-12-24 22:24:28
+conv_25,0.0,"[""customer_support"", ""policy_clarification""]",0.7,Neutral sentiment as support provides explanation without emotional tone.,grok-3,2025-12-24 22:24:28
+conv_26,-1.0,"[""customer_complaint"", ""documentation_issue""]",0.8,Negative sentiment with implied frustration over corporate communication.,grok-3,2025-12-24 22:24:28
+conv_27,-1.0,"[""customer_support"", ""dismissal""]",0.75,Negative sentiment as support declines assistance or further discussion.,grok-3,2025-12-24 22:24:28
+conv_23,0.0,"[""account-takeover"", ""email-consent""]",0.8,"Neutral tone with procedural information, no strong emotion detected.",grok-3,2025-12-24 22:24:36
+conv_24,-1.0,"[""incorrect-information"", ""frustration""]",0.9,Strong negative sentiment due to frustration over incorrect information.,grok-3,2025-12-24 22:24:36
+conv_28,0.0,"[""account-assumption"", ""local-outlet""]",0.7,"Neutral tone, providing clarification, no emotional weight.",grok-3,2025-12-24 22:24:36
+conv_29,-1.0,"[""broken-link"", ""incorrect-information""]",0.9,Negative sentiment due to broken link and incorrect information.,grok-3,2025-12-24 22:24:36
+conv_30,0.5,"[""apology"", ""assistance-offered""]",0.8,Positive sentiment due to polite apology and offer to help.,grok-3,2025-12-24 22:24:36
+conv_31,0.3,"[""customer-service"", ""frustration""]",0.7,"Mixed sentiment, positive about reps but frustrated with service.",grok-3,2025-12-24 22:24:36
+conv_32,0.5,"[""apology"", ""assistance-offered""]",0.8,Positive sentiment due to apology and willingness to assist.,grok-3,2025-12-24 22:24:36
+conv_33,-1.0,"[""service-quality"", ""billing-issue""]",0.9,Strong negative sentiment due to dissatisfaction with service and cost.,grok-3,2025-12-24 22:24:36
+conv_34,0.5,"[""assistance-offered"", ""trouble""]",0.8,Positive sentiment due to offer of help despite trouble.,grok-3,2025-12-24 22:24:36
+conv_35,1.0,"[""resolution"", ""gratitude""]",0.9,Strong positive sentiment due to successful resolution and thanks.,grok-3,2025-12-24 22:24:36
+conv_36,-1.0,"[""customer_support"", ""frustration""]",0.9,"User expresses strong frustration with customer service, using multiple emojis and negative language.",grok-3,2025-12-24 22:24:43
+conv_37,1.0,"[""customer_support"", ""positive_response""]",0.8,"Support offers help in a positive tone, though context of prior interaction is limited.",grok-3,2025-12-24 22:24:43
+conv_38,0.0,"[""customer_support""]",0.7,Neutral instruction from support with no strong sentiment evident.,grok-3,2025-12-24 22:24:43
+conv_39,-1.0,"[""customer_support"", ""urgency"", ""gaming""]",0.85,User conveys urgency and frustration over lack of internet for gaming.,grok-3,2025-12-24 22:24:43
+conv_40,0.0,"[""customer_support""]",0.7,"Neutral request from support to follow and DM, no strong sentiment.",grok-3,2025-12-24 22:24:43
+conv_41,-1.0,"[""customer_support"", ""frustration""]",0.9,User expresses frustration over account validation issues.,grok-3,2025-12-24 22:24:43
+conv_42,-1.0,"[""customer_support"", ""delivery_issue""]",0.85,"User reports a delivery error, indicating dissatisfaction.",grok-3,2025-12-24 22:24:43
+conv_43,0.0,"[""customer_support"", ""policy""]",0.7,"Support states policy on authentication, neutral tone.",grok-3,2025-12-24 22:24:43
+conv_44,-1.0,"[""customer_support"", ""frustration"", ""billing""]",0.9,User shows frustration over inability to validate account despite willingness to pay.,grok-3,2025-12-24 22:24:43
+conv_45,0.0,"[""customer_support""]",0.7,"Support offers a solution via DM, maintaining a neutral tone.",grok-3,2025-12-24 22:24:43
+conv_46,0.0,"[""billing-inquiry"", ""location-query""]",0.8,"Neutral tone in inquiry about bill and location, no strong emotion detected.",grok-3,2025-12-24 22:24:49
+conv_47,-1.0,"[""account-issue"", ""frustration""]",0.9,Strong negative sentiment due to inability to locate account and frustration expressed.,grok-3,2025-12-24 22:24:49
+conv_48,0.0,"[""service-clarification""]",0.85,Neutral tone in seeking clarification about service type.,grok-3,2025-12-24 22:24:49
+conv_49,-1.0,"[""billing-issue"", ""poor-service"", ""frustration""]",0.95,"Highly negative sentiment due to prolonged billing issue, rude service, and multiple transfers.",grok-3,2025-12-24 22:24:49
+conv_50,0.0,"[""technical-support""]",0.8,Neutral tone in technical inquiry about router light.,grok-3,2025-12-24 22:24:49
+conv_51,-1.0,"[""wifi-issue"", ""technical-problem""]",0.85,Negative sentiment due to WiFi issue impacting connectivity.,grok-3,2025-12-24 22:24:49
+conv_52,0.0,"[""technical-support""]",0.8,Neutral tone in follow-up question about router lights.,grok-3,2025-12-24 22:24:49
+conv_53,-1.0,"[""connectivity-issue"", ""frustration""]",0.9,Negative sentiment due to repeated disconnection and expressed frustration.,grok-3,2025-12-24 22:24:49
+conv_54,0.0,"[""technical-support"", ""fios-service""]",0.85,Neutral tone in technical inquiry about Fios service and router light.,grok-3,2025-12-24 22:24:49
+conv_55,0.0,"[""confirmation""]",0.7,Neutral tone in short confirmation response.,grok-3,2025-12-24 22:24:49
+conv_56,-1.0,"[""service-issue"", ""customer-frustration""]",0.8,"Customer reports service cutting out, indicating a negative experience.",grok-3,2025-12-24 22:24:55
+conv_57,-1.0,"[""service-issue"", ""customer-frustration""]",0.9,Customer expresses strong frustration with frequent service interruptions.,grok-3,2025-12-24 22:24:55
+conv_58,0.0,"[""customer-support"", ""resolution-attempt""]",0.7,"Support tries to address customer feelings, neutral tone.",grok-3,2025-12-24 22:24:55
+conv_59,-1.0,"[""service-issue"", ""customer-frustration""]",0.95,"Customer harshly criticizes ISP, clear negative sentiment.",grok-3,2025-12-24 22:24:55
+conv_60,0.0,"[""customer-support"", ""service-inquiry""]",0.8,"Support inquires about location and service status, neutral tone.",grok-3,2025-12-24 22:24:55
+conv_61,-1.0,"[""service-outage"", ""customer-frustration""]",0.9,"Customer reports widespread outage, frustration evident.",grok-3,2025-12-24 22:24:55
+conv_62,0.0,"[""customer-support"", ""app-issue""]",0.7,"Support seeks clarification on app issue, neutral tone.",grok-3,2025-12-24 22:24:55
+conv_63,-1.0,"[""app-issue"", ""customer-frustration""]",0.85,"Customer demands app fix, clear frustration.",grok-3,2025-12-24 22:24:55
+conv_64,1.0,"[""positive-feedback"", ""customer-appreciation""]",0.9,"Support gives positive compliment, clear positive sentiment.",grok-3,2025-12-24 22:24:55
+conv_65,1.0,"[""positive-feedback"", ""customer-appreciation""]",0.95,"Customer acknowledges nice interaction, strong positive sentiment.",grok-3,2025-12-24 22:24:55
+conv_66,0.2,"[""halloween"", ""costume""]",0.7,Lighthearted mention of a costume with a neutral-to-positive tone.,grok-3,2025-12-24 22:25:07
+conv_68,-1.0,"[""customer_support"", ""issue""]",0.9,Apology from brand indicates a negative customer experience.,grok-3,2025-12-24 22:25:07
+conv_69,-1.0,"[""halloween"", ""promotion_issue""]",0.95,Explicit complaint about not receiving a promotional offer.,grok-3,2025-12-24 22:25:07
+conv_70,0.3,"[""expansion_request"", ""customer_engagement""]",0.8,Neutral-to-positive response to a customer request for a new location.,grok-3,2025-12-24 22:25:07
+conv_71,0.5,"[""expansion_request"", ""loyalty""]",0.85,Positive tone with a promise of frequent visits.,grok-3,2025-12-24 22:25:07
+conv_73,0.8,"[""positive_feedback"", ""customer_service""]",0.9,Positive acknowledgment of a great customer experience.,grok-3,2025-12-24 22:25:07
+conv_74,0.9,"[""positive_feedback"", ""customer_service""]",0.95,Explicit praise for excellent service and speed.,grok-3,2025-12-24 22:25:07
+conv_75,0.7,"[""positive_feedback"", ""customer_engagement""]",0.8,Playful and positive interaction with customer.,grok-3,2025-12-24 22:25:07
+conv_76,0.1,"[""halloween"", ""costume""]",0.6,"Neutral tone about being in costume, lacking strong sentiment.",grok-3,2025-12-24 22:25:07
+conv_77,-1.0,"[""customer_support"", ""serious_issue""]",0.9,Brand response indicates a serious customer concern.,grok-3,2025-12-24 22:25:07
+conv_152,0.5,"[""halloween"", ""boorito""]",0.8,Positive tone with playful reference to Halloween and Boorito as an adult event.,grok-3,2025-12-24 22:25:17
+conv_153,0.7,"[""halloween"", ""boorito""]",0.9,Excited tone about Halloween and enjoying Boorito promotion.,grok-3,2025-12-24 22:25:17
+conv_154,0.8,"[""customer-service"", ""praise""]",0.9,"Positive feedback request from brand, indicating good service.",grok-3,2025-12-24 22:25:17
+conv_155,0.9,"[""customer-service"", ""praise""]",0.95,Explicit gratitude for quick issue resolution.,grok-3,2025-12-24 22:25:17
+conv_156,-1.0,"[""customer-service"", ""complaint""]",0.95,Strong frustration over wrong order and double charge.,grok-3,2025-12-24 22:25:17
+conv_158,0.2,"[""boorito"", ""participation""]",0.7,Neutral informative response about event participation.,grok-3,2025-12-24 22:25:17
+conv_78,-1.0,"[""boorito"", ""complaint""]",0.9,"Negative experience with Boorito, mentioning specific issues.",grok-3,2025-12-24 22:25:17
+conv_79,0.3,"[""pricing"", ""boorito""]",0.8,Neutral clarification on pricing with a slight positive tone.,grok-3,2025-12-24 22:25:17
+conv_80,0.0,"[""pricing"", ""boorito""]",0.7,Neutral inquiry about extra charges.,grok-3,2025-12-24 22:25:17
+conv_81,0.4,"[""halloween"", ""boorito"", ""promotion""]",0.8,Neutral to slightly positive promotion of Boorito event with rules.,grok-3,2025-12-24 22:25:17
+conv_159,0.8,"[""halloween-promotion"", ""positive-feedback""]",0.9,"Positive tone about a promotional offer for Halloween, encouraging others to participate.",grok-3,2025-12-24 22:25:28
+conv_160,0.5,"[""customer-service"", ""apology""]",0.8,"Apologetic and helpful tone from the brand, though lacking context of the issue.",grok-3,2025-12-24 22:25:28
+conv_161,-1.0,"[""customer-complaint"", ""negative-feedback""]",0.9,Clear frustration and negative sentiment expressed with 'rude' comment.,grok-3,2025-12-24 22:25:28
+conv_162,0.3,"[""customer-service"", ""follow-up""]",0.7,"Neutral to slightly positive tone encouraging a retry, though context is limited.",grok-3,2025-12-24 22:25:28
+conv_163,0.6,"[""halloween-promotion"", ""humor""]",0.8,"Playful tone asking about promotion eligibility, suggesting lighthearted engagement.",grok-3,2025-12-24 22:25:28
+conv_164,0.9,"[""positive-feedback"", ""halloween-promotion""]",0.9,"Very positive and friendly response from the brand, reinforcing a good experience.",grok-3,2025-12-24 22:25:28
+conv_165,0.7,"[""positive-feedback"", ""halloween-promotion""]",0.9,"Positive mention of a yearly tradition tied to the brand, showing loyalty.",grok-3,2025-12-24 22:25:28
+conv_166,-1.0,"[""customer-complaint"", ""negative-feedback""]",0.9,Strong negative sentiment with 'concerning' and a request for investigation.,grok-3,2025-12-24 22:25:28
+conv_167,-1.0,"[""customer-complaint"", ""negative-feedback""]",0.95,Highly negative tone with 'nasty' and evidence of a serious issue in food.,grok-3,2025-12-24 22:25:28
+conv_168,-1.0,"[""customer-complaint"", ""apology""]",0.8,"Apologetic tone from brand, but indicates a negative customer experience with 'bummer.'",grok-3,2025-12-24 22:25:28
+conv_169,-1.0,"[""missed-opportunity"", ""food-craving""]",0.8,"Expresses disappointment about not being near a Chipotle, indicating negative sentiment.",grok-3,2025-12-24 22:25:38
+conv_170,0.5,"[""customer-engagement""]",0.9,"Positive and friendly response from Chipotle, acknowledging the customer.",grok-3,2025-12-24 22:25:38
+conv_171,0.8,"[""positive-feedback"", ""brand-merchandise""]",0.85,Customer expresses satisfaction with a cozy onesie from Target related to Chipotle.,grok-3,2025-12-24 22:25:38
+conv_172,-1.0,"[""personal-struggle"", ""customer-engagement""]",0.75,"Customer feels sorry for themselves due to personal circumstances, despite thanks to Becky.",grok-3,2025-12-24 22:25:38
+conv_174,0.7,"[""customer-engagement"", ""brand-merchandise""]",0.9,"Supportive and playful response from Chipotle about the onesie, fostering connection.",grok-3,2025-12-24 22:25:38
+conv_175,-1.0,"[""loneliness"", ""halloween-theme""]",0.7,"Customer considers going to Chipotle alone in a onesie, with a sad tone for Halloween.",grok-3,2025-12-24 22:25:38
+conv_176,0.9,"[""customer-appreciation"", ""halloween-theme""]",0.95,Chipotle expresses enthusiasm and gratitude for the customer's visit.,grok-3,2025-12-24 22:25:38
+conv_177,0.8,"[""halloween-theme"", ""brand-engagement""]",0.85,Customer engages positively with Chipotle over a Halloween duo concept.,grok-3,2025-12-24 22:25:38
+conv_178,0.0,"[""neutral-response"", ""customer-support""]",0.9,"Neutral response from AskPlayStation with no emotional tone, just information.",grok-3,2025-12-24 22:25:38
+conv_179,-1.0,"[""frustration"", ""customer-support""]",0.9,Customer expresses frustration and impatience with AskPlayStation for help.,grok-3,2025-12-24 22:25:38

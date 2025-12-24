@@ -1,10 +1,12 @@
+from __future__ import annotations
+
 import asyncio
 import time
-from typing import Tuple
+from typing import Optional, Tuple
 
 
 class TokenBucket:
-    def __init__(self, rate_per_sec: int, capacity: int | None = None):
+    def __init__(self, rate_per_sec: int, capacity: Optional[int] = None):
         self.rate = rate_per_sec
         self.capacity = capacity or rate_per_sec
         self.tokens = float(self.capacity)

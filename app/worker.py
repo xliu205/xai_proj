@@ -12,7 +12,7 @@ class ProcessingWorker:
     def __init__(self, queue: asyncio.Queue[str]):
         self.queue = queue
         self._stop_event = asyncio.Event()
-        self._client = GrokClient()
+        self._client = GrokClient(api_key=settings.grok_api_key)
 
     async def start(self) -> None:
         await db.init_db()

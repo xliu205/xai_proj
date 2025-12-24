@@ -17,7 +17,8 @@ async def get_connection() -> aiosqlite.Connection:
 
 
 async def init_db() -> None:
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         await conn.execute(
             """
             CREATE TABLE IF NOT EXISTS conversations (
@@ -47,11 +48,14 @@ async def init_db() -> None:
             """
         )
         await conn.commit()
+    finally:
+        await conn.close()
 
 
 async def enqueue_conversation(conversation_id: str, payload: Dict[str, Any]) -> None:
     now = datetime.utcnow().isoformat()
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         await conn.execute(
             """
             INSERT OR REPLACE INTO conversations (
@@ -61,13 +65,16 @@ async def enqueue_conversation(conversation_id: str, payload: Dict[str, Any]) ->
             (conversation_id, json.dumps(payload), conversation_id, now, now),
         )
         await conn.commit()
+    finally:
+        await conn.close()
 
 
 async def mark_status(conversation_ids: Sequence[str], status: str, error: Optional[str] = None) -> None:
     if not conversation_ids:
         return
     now = datetime.utcnow().isoformat()
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         await conn.executemany(
             """
             UPDATE conversations
@@ -77,23 +84,29 @@ async def mark_status(conversation_ids: Sequence[str], status: str, error: Optio
             [(status, error, now, cid) for cid in conversation_ids],
         )
         await conn.commit()
+    finally:
+        await conn.close()
 
 
 async def fetch_conversations(conversation_ids: Sequence[str]) -> List[aiosqlite.Row]:
     if not conversation_ids:
         return []
     placeholders = ",".join("?" for _ in conversation_ids)
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         cur = await conn.execute(
             f"SELECT conversation_id, payload, status FROM conversations WHERE conversation_id IN ({placeholders})",
             tuple(conversation_ids),
         )
         rows = await cur.fetchall()
+    finally:
+        await conn.close()
     return rows
 
 
 async def load_outstanding(limit: int) -> List[str]:
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         cur = await conn.execute(
             """
             SELECT conversation_id FROM conversations
@@ -104,11 +117,14 @@ async def load_outstanding(limit: int) -> List[str]:
             (limit,),
         )
         rows = await cur.fetchall()
+    finally:
+        await conn.close()
     return [r[0] for r in rows]
 
 
 async def store_insights(insights: Iterable[InsightPayload]) -> None:
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         await conn.executemany(
             """
             INSERT INTO insights (
@@ -129,6 +145,8 @@ async def store_insights(insights: Iterable[InsightPayload]) -> None:
             ],
         )
         await conn.commit()
+    finally:
+        await conn.close()
 
 
 async def query_insights(filters: InsightsQuery) -> Tuple[List[Dict[str, Any]], int]:
@@ -145,7 +163,8 @@ async def query_insights(filters: InsightsQuery) -> Tuple[List[Dict[str, Any]], 
         elif filters.sentiment == "neutral":
             clauses.append("sentiment_score BETWEEN -0.2 AND 0.2")
     where = " AND ".join(clauses)
-    async with await get_connection() as conn:
+    conn = await get_connection()
+    try:
         data_cursor = await conn.execute(
             f"SELECT conversation_id, sentiment_score, clusters, confidence, reasoning, model, created_at FROM insights WHERE {where} ORDER BY created_at DESC LIMIT ?",
             (*params, filters.limit),
@@ -157,6 +176,8 @@ async def query_insights(filters: InsightsQuery) -> Tuple[List[Dict[str, Any]], 
             tuple(params),
         )
         total_count = (await count_cursor.fetchone())[0]
+    finally:
+        await conn.close()
 
     results = []
     for row in rows:
