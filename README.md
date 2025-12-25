@@ -1,5 +1,7 @@
 # Backend Engineer Insights Platform
 
+Loom video Demo： https://www.loom.com/share/f4c0844a0dc045cebeb3688ab43d7132
+
 Production-minded MVP for an internal insights platform. It ingests support conversations, queues them for async Grok analysis under strict rate limits, and stores both raw payloads and validated LLM output for downstream consumers.
 
 ## System Overview
